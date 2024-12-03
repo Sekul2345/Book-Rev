@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookRev</title>
+    <link rel="icon" href="FaviFolder/book logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="navBar">
+        <h1>Book Rev</h1>
+    </div>
+    <div class="container">
+        <div class="bookContainer">
+            <h2>python</h2>
+            <h5>Guido van Rossum</h5>
+            <p>Python was created by Guido van Rossum, and first released on February 20, 1991. While you may know the python as a large snake, the name of the Python programming language comes from an old BBC television comedy sketch series called Monty Python's Flying Circus.</p>
+            <button onclick="deleteclick(event)">Delete</button>
+        </div>
+        <div class="bookContainer">
+            <h2>javascript</h2>
+            <h5>Brendan Eich</h5>
+            <p>JavaScript was invented by Brendan Eich in 1995. It was developed for Netscape 2, and became the ECMA-262 standard in 1997.</p>
+            <button onclick="deleteclick(event)">Delete</button>
+        </div>
+        
+    </div>
+
+    <div class="popupOverlay"></div>
+    <div class="popupBox">
+        <h2>Add Books</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="bookTitleInput">
+            <input type="text" placeholder="Book Author" id="bookAuthorInput">
+            <textarea placeholder="short Description" id="BookDescriptionInput"></textarea>
+            <button id="addBook">ADD</button>
+            <button id="cancelPopup">CANCEL</button>
+        </form>
+    </div>
+
+
+    <button class="addButton" id="addPopup">+</button>
+    <script src="index.js"></script> 
+</body>
+</html>
